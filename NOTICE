@@ -3,3 +3,6 @@ Copyright 2026 Santiago Vasco-Morales and Paola Toapanta-Pinta
 
 This product includes software developed for the HCC-PI Monitor academic open source project.
 
+HCC-PI Monitor depends on third-party open source libraries, including Streamlit,
+pandas, and Plotly. Those components remain subject to their respective licenses
+and are not claimed as the property of the HCC-PI Monitor authors.

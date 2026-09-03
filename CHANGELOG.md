@@ -6,12 +6,12 @@ All notable changes to HCC-PI Monitor will be documented in this file.
 
 ### Added
 
-- Open source governance, citation, contribution, authorship, methodology, ethics, data dictionary, limitations, and release-readiness documentation.
-- Ethical approval reference standardized as `CEISH-HGDC-2024-007; August 18, 2024`.
-- Explicit statement that no individual-level research dataset is distributed with HCC-PI Monitor v1.0.0.
+- Added Zenodo DOI metadata to the public repository.
+- Added persistent citation information for v1.0.0.
+- Improved public documentation and repository hygiene.
 
-## [1.0.0] — Planned
+## [1.0.0] — 2026-09-03
 
-- Initial academic open source software release.
-
-This planned entry does not indicate that a GitHub release, tag, DOI, or Zenodo deposit already exists.
+- Initial academic open source software release, published and archived in Zenodo.
+- Version DOI: `10.5281/zenodo.22285504`.
+- Concept DOI: `10.5281/zenodo.22285503`.

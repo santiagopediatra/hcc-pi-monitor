@@ -1,6 +1,11 @@
-# Zenodo readiness for v1.0.0
+# Zenodo archive status for v1.0.0
 
-No Zenodo publication or release should be created until every item is confirmed.
+Release status: **Published and archived**
+
+- **Version-specific DOI:** `10.5281/zenodo.22285504`
+- **Concept DOI:** `10.5281/zenodo.22285503`
+- **GitHub tag:** `v1.0.0`
+- **Release date:** `2026-09-03`
 
 ## Repository
 
@@ -10,12 +15,11 @@ No Zenodo publication or release should be created until every item is confirmed
 - [x] Demonstrative nature and clinical limitations documented.
 - [x] Ethics approval documented consistently as CEISH-HGDC-2024-007; August 18, 2024.
 - [x] No individual-level research dataset included.
-- [ ] Final release commit reviewed.
-- [ ] Git tag `v1.0.0` created.
-- [ ] GitHub release created.
-- [ ] Zenodo integration and deposit reviewed by the authors.
+- [x] Final release commit reviewed.
+- [x] Git tag `v1.0.0` created.
+- [x] Zenodo archive published.
+- [x] Version and concept DOI recorded.
 
-## Pre-deposit checks
+## Post-release safeguards
 
-Confirm that the public archive excludes `.venv`, secrets, clinical datasets, identifiable patient information, temporary audiovisual tools, and generated intermediate files. Confirm that no DOI is added until Zenodo assigns it.
-
+The archived `v1.0.0` tag must not be moved, recreated, deleted, or force-updated. Future repository changes belong under `Unreleased` and must not be represented as part of the archived snapshot. Public archives must exclude `.venv`, secrets, clinical datasets, identifiable patient information, administrative SENADI files, temporary audiovisual tools, and generated intermediate files.

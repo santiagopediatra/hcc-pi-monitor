@@ -1,12 +1,16 @@
-# Zenodo metadata draft
+# Zenodo metadata for v1.0.0
 
-This document prepares metadata for a possible future Zenodo deposit. It does not indicate that a deposit, DOI, or release has been created.
+HCC-PI Monitor v1.0.0 has been published and archived in Zenodo. This document records the public software metadata and does not claim a DOI for a scientific article.
 
 | Field | Value |
 |---|---|
 | Title | HCC-PI Monitor |
 | Upload type | Software |
-| Version | v1.0.0 (planned) |
+| Version | v1.0.0 |
+| Release date | 2026-09-03 |
+| Release status | Published and archived |
+| Version DOI | 10.5281/zenodo.22285504 |
+| Concept DOI | 10.5281/zenodo.22285503 |
 | Creators | Santiago Vasco-Morales; Paola Toapanta-Pinta |
 | License | Apache-2.0 |
 | Repository | https://github.com/santiagopediatra/hcc-pi-monitor |
@@ -19,5 +23,4 @@ HCC-PI Monitor is an academic open source prototype for monitoring documented in
 
 ## Data availability
 
-No individual-level research dataset is included in HCC-PI Monitor v1.0.0 or distributed through this software release. A future software deposit must exclude clinical datasets, secrets, local environments, and identifiable patient information.
-
+No individual-level research dataset is included in HCC-PI Monitor v1.0.0 or distributed through this software release. The software archive excludes clinical datasets, secrets, local environments, administrative SENADI files, and identifiable patient information.

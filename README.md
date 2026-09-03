@@ -43,7 +43,12 @@ Abra `http://localhost:8501`.
 
 ## Aplicación web
 
-La demostración pública está disponible en [hcc-pi-monitor.streamlit.app](https://hcc-pi-monitor.streamlit.app/). Para Streamlit Community Cloud, conecte un fork y seleccione `app.py` como archivo principal.
+- **Demo pública:** [hcc-pi-monitor.streamlit.app](https://hcc-pi-monitor.streamlit.app/)
+- **Repositorio GitHub:** [santiagopediatra/hcc-pi-monitor](https://github.com/santiagopediatra/hcc-pi-monitor)
+- **DOI de v1.0.0:** [10.5281/zenodo.22285504](https://doi.org/10.5281/zenodo.22285504)
+- **DOI conceptual / todas las versiones:** [10.5281/zenodo.22285503](https://doi.org/10.5281/zenodo.22285503)
+
+Para Streamlit Community Cloud, conecte un fork y seleccione `app.py` como archivo principal.
 
 ## Investigación
 

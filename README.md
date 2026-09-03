@@ -1,5 +1,7 @@
 # HCC-PI Monitor
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22285503.svg)](https://doi.org/10.5281/zenodo.22285503)
+
 HCC-PI Monitor es un proyecto académico open source orientado al monitoreo de adherencia institucional documentada a prácticas de parto humanizado. El código se publica para permitir su uso, estudio, modificación y colaboración en investigación bajo la licencia Apache 2.0.
 
 > **Prototipo académico — Datos demostrativos. Actualmente no está destinado a la toma de decisiones clínicas individuales.**
@@ -47,13 +49,17 @@ La demostración pública está disponible en [hcc-pi-monitor.streamlit.app](htt
 
 El repositorio está abierto a propuestas de análisis, validaciones externas y futuros protocolos multicéntricos. Cada estudio debe definir su protocolo, gobernanza, aprobación ética, fuente de datos y plan estadístico. Las funcionalidades futuras y las hipótesis no deben presentarse como resultados obtenidos.
 
-### Ética y disponibilidad de datos
+## Scope and data availability
 
-> The research data used in the study supporting the development and evaluation of HCC-PI were obtained following prior approval by the Comité de Ética para la Investigación en Seres Humanos del Hospital General Docente de Calderón (CEISH-HGDC-2024-007; August 18, 2024).
->
-> No individual-level research dataset is included in HCC-PI Monitor v1.0.0 or distributed through this software release.
+HCC-PI Monitor is open-source academic research software for institutional monitoring and visualization of documented adherence to selected humanized childbirth care practices.
 
-Consulte [`docs/ETHICS.md`](docs/ETHICS.md) para conocer el alcance de esta declaración.
+No individual-level clinical research dataset is included or distributed with this repository.
+
+The research supporting development and evaluation of HCC-PI received prior approval from the Comité de Ética para la Investigación en Seres Humanos del Hospital General Docente de Calderón (CEISH-HGDC-2024-007; August 18, 2024).
+
+This software is not intended for individual clinical decision-making. Further external and prospective validation is required.
+
+See [`docs/ETHICS.md`](docs/ETHICS.md) for the scope of this statement.
 
 ## Limitaciones
 
@@ -63,9 +69,19 @@ HCC-PI Monitor mide adherencia documentada a procesos. No mide consentimiento in
 
 La demostración no solicita nombre, cédula, teléfono, correo electrónico, dirección ni número de historia clínica. **No introducir información identificable de pacientes en la demostración pública.** El proyecto no usa base de datos externa ni secretos para su funcionamiento actual.
 
-## Cómo citar
+## Citation
 
-Los metadatos están en [`CITATION.cff`](CITATION.cff). GitHub puede generar formatos bibliográficos mediante **Cite this repository**. La cita debe reconocer a Santiago Vasco-Morales y Paola Toapanta-Pinta, identificar HCC-PI Monitor como software y enlazar este repositorio. No se declara DOI ni versión publicada.
+If you use HCC-PI Monitor in research, please cite:
+
+Vasco-Morales, Santiago, & Toapanta-Pinta, Paola. (2026).  
+*HCC-PI Monitor (v1.0.0)* [Computer software].  
+Zenodo.  
+[https://doi.org/10.5281/zenodo.22285504](https://doi.org/10.5281/zenodo.22285504)
+
+Concept DOI for all versions:  
+[https://doi.org/10.5281/zenodo.22285503](https://doi.org/10.5281/zenodo.22285503)
+
+Machine-readable citation metadata are available in [`CITATION.cff`](CITATION.cff).
 
 ## Cómo contribuir
 

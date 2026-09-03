@@ -5,3 +5,4 @@
 .streamlit/secrets.toml
 .vscode/
 .DS_Store
+video_demo/tools/

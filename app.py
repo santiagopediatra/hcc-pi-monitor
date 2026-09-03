@@ -22,6 +22,7 @@ PAGINAS = ["🏠 Resumen ejecutivo", "📈 Tendencias", "🩺 Registrar parto", 
 st.sidebar.markdown("## HCC-PI Monitor")
 pagina = st.sidebar.radio("Navegación", PAGINAS, label_visibility="collapsed")
 st.sidebar.caption("Solo datos ficticios o demostrativos. Sin identificadores personales.")
+st.sidebar.markdown("[Proyecto open source](https://github.com/santiagopediatra/hcc-pi-monitor)")
 
 def etiqueta_dashboard() -> None:
     """Identifica los paneles que presentan información demostrativa."""

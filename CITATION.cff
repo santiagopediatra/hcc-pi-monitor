@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Si utiliza HCC-PI Monitor en investigación, cite este software."
+title: "HCC-PI Monitor"
+type: software
+authors:
+  - family-names: "Vasco-Morales"
+    given-names: "Santiago"
+  - family-names: "Toapanta-Pinta"
+    given-names: "Paola"
+repository-code: "https://github.com/santiagopediatra/hcc-pi-monitor"
+url: "https://hcc-pi-monitor.streamlit.app/"
+license: "Apache-2.0"
+abstract: "Prototipo académico open source para el monitoreo de adherencia institucional documentada a cinco prácticas de parto humanizado. The supporting research received prior approval from the Comité de Ética para la Investigación en Seres Humanos del Hospital General Docente de Calderón (CEISH-HGDC-2024-007; August 18, 2024). No individual-level research dataset is included in or distributed with this software release."
+

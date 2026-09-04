@@ -34,13 +34,13 @@ FACTORES_ASOCIADOS = {
     "Acompañante": [
         ("Edad <20 años", 5.18, 2.41, 11.10, "<0.001"), ("Edad ≥35", 3.44, 2.11, 5.58, "<0.001"),
         ("Pareja estable", .86, .80, .94, "<0.001"), ("Educación baja", .87, .81, .94, "<0.001"),
-        ("Prenatal <4 visitas", .87, .80, .96, "0.004"), ("HPP", .82, .74, .91, "<0.001")],
+        ("Prenatal <4 visitas", .87, .80, .96, "0.004"), ("Hemorragia posparto (HPP)", .82, .74, .91, "<0.001")],
     "Posición": [("Minoría étnica", 2.71, 1.53, 4.83, "<0.001"),
                  ("Psicoprofilaxis", 1.43, 1.15, 1.78, "0.001"), ("Educación baja", .82, .69, .97, "0.025")],
     "Clampaje": [("Educación baja", .74, .59, .93, "0.010"), ("Peso <2500 g", .55, .39, .78, "<0.001"),
                  ("Apgar <7", .10, .07, .14, "<0.001")],
     "Contacto piel-piel": [("Prematurez", .43, .32, .57, "<0.001"), ("Peso bajo", .74, .56, .98, "0.034"),
-                           ("Apgar <7", .11, .08, .16, "<0.001"), ("HPP", .48, .39, .58, "<0.001")],
+                           ("Apgar <7", .11, .08, .16, "<0.001"), ("Hemorragia posparto (HPP)", .48, .39, .58, "<0.001")],
 }
 
 HOSPITALES_SIMULADOS = {

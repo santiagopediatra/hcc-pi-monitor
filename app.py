@@ -19,10 +19,43 @@ encabezado()
 
 PAGINAS = ["🏠 Resumen ejecutivo", "📈 Tendencias", "🩺 Registrar parto", "🔎 Factores asociados",
            "🏥 Comparación hospitalaria", "📋 Calidad de datos", "ℹ️ Metodología"]
+
+if "pagina" not in st.session_state or st.session_state["pagina"] not in PAGINAS:
+    st.session_state["pagina"] = PAGINAS[0]
+
+def cambiar_pagina(clave_origen: str) -> None:
+    """Sincroniza la sección activa desde cualquiera de los menús internos."""
+    pagina_seleccionada = st.session_state[clave_origen]
+    st.session_state["pagina"] = pagina_seleccionada
+    clave_destino = "navegacion_movil" if clave_origen == "navegacion_lateral" else "navegacion_lateral"
+    st.session_state[clave_destino] = pagina_seleccionada
+
+# Ambos controles navegan dentro de la misma ejecución de Streamlit. El segundo
+# queda oculto en escritorio y ofrece un acceso persistente en pantallas móviles.
+st.session_state.setdefault("navegacion_lateral", st.session_state["pagina"])
+st.session_state.setdefault("navegacion_movil", st.session_state["pagina"])
 st.sidebar.markdown("## HCC-PI Monitor")
-pagina = st.sidebar.radio("Navegación", PAGINAS, label_visibility="collapsed")
+st.sidebar.radio(
+    "Navegación",
+    PAGINAS,
+    key="navegacion_lateral",
+    label_visibility="collapsed",
+    on_change=cambiar_pagina,
+    args=("navegacion_lateral",),
+)
 st.sidebar.caption("Solo datos ficticios o demostrativos. Sin identificadores personales.")
 st.sidebar.markdown("[Proyecto open source](https://github.com/santiagopediatra/hcc-pi-monitor)")
+
+with st.container(key="navegacion_movil_contenedor"):
+    st.selectbox(
+        "Sección",
+        PAGINAS,
+        key="navegacion_movil",
+        on_change=cambiar_pagina,
+        args=("navegacion_movil",),
+    )
+
+pagina = st.session_state["pagina"]
 
 def etiqueta_dashboard() -> None:
     """Identifica los paneles que presentan información demostrativa."""
@@ -80,7 +113,11 @@ def registrar() -> None:
             "gestacional": a.selectbox("Edad gestacional", ["<37", "37–41", ">=42"]),
             "peso": b.selectbox("Peso neonatal", ["<2500 g", "2500–3999 g", ">=4000 g"]),
             "apgar": c.selectbox("Apgar minuto 1", ["<7", ">=7"]),
-            "hpp": a.selectbox("HPP", ["No", "Sí"]),
+            "hpp": a.selectbox(
+                "Hemorragia posparto (HPP)",
+                ["No", "Sí"],
+                help="No: no presentó hemorragia posparto. Sí: presentó hemorragia posparto.",
+            ),
         }
         st.markdown("#### Prácticas documentadas")
         practicas = {codigo: st.checkbox(datos["nombre"], key=f"registro_{codigo}") for codigo,datos in PRACTICAS.items()}

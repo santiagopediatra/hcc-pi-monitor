@@ -24,7 +24,7 @@ Este diccionario refleja el formulario demostrativo y la lógica actual. No defi
 | `gestacional` | `<37`, `37–41`, `>=42` |
 | `peso` | `<2500 g`, `2500–3999 g`, `>=4000 g` |
 | `apgar` | `<7`, `>=7` |
-| `hpp` | `No`, `Sí` |
+| `hpp` (hemorragia posparto) | `No`, `Sí` |
 
 ## Identificador demostrativo
 
@@ -33,4 +33,3 @@ Este diccionario refleja el formulario demostrativo y la lógica actual. No defi
 ## Privacidad y datos agregados
 
 El formulario no contempla identificadores personales. Los históricos, hospitales A/B/C, indicadores de calidad, razones de ausencia de acompañante y factores asociados son demostrativos o de referencia. No representan una validación clínica ni resultados atribuibles a instituciones reales.
-

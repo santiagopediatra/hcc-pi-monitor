@@ -13,7 +13,16 @@ CSS = """
 .info{background:#eaf5f8;border-left:5px solid #16A085;padding:16px;border-radius:10px}.formula{font-size:1.8rem;text-align:center;font-weight:800;color:#163A5F;background:white;padding:22px;border-radius:14px}
 .footer{text-align:center;color:#60717c;border-top:1px solid #dce4ea;margin-top:35px;padding:22px;font-size:.85rem}
 div[data-testid="stForm"]{background:#fff;padding:20px;border-radius:14px;border:1px solid #e2e9ee}
-@media(max-width:700px){.hero h1{font-size:1.6rem}.block-container{padding:1rem}.kpi{font-size:1.55rem}}
+.st-key-navegacion_movil_contenedor{display:none}
+@media(max-width:700px){
+  .hero{padding:18px 16px}.hero h1{font-size:1.6rem;overflow-wrap:anywhere}
+  .block-container{padding:1rem;max-width:100%;overflow-x:hidden}.kpi{font-size:1.55rem}
+  .st-key-navegacion_movil_contenedor{display:block;position:sticky;top:.5rem;z-index:999;background:#F5F7FA;padding:.35rem 0 .55rem}
+  .stButton button,.stFormSubmitButton button{min-height:2.75rem;width:100%}
+  [data-testid="stSelectbox"]{width:100%}
+  [data-testid="stPlotlyChart"]{max-width:100%;overflow:hidden}
+  div[data-testid="stForm"]{padding:14px}
+}
 </style>"""
 
 def aplicar_estilos() -> None:

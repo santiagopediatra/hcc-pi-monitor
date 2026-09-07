@@ -14,17 +14,7 @@ Este diccionario refleja el formulario demostrativo y la lógica actual. No defi
 | `indice` | Numérica | 0.00–1.00 | Suma de componentes dividida para cinco. |
 | `score` | Entera | 0–5 | Número de prácticas cumplidas. |
 
-## Variables categóricas del formulario
-
-| Campo interno | Categorías disponibles |
-|---|---|
-| `edad_materna` | `<20`, `20–34`, `>=35` |
-| `educacion` | `Primaria o menos`, `Secundaria o superior` |
-| `prenatales` | `0`, `1–4`, `>=5` |
-| `gestacional` | `<37`, `37–41`, `>=42` |
-| `peso` | `<2500 g`, `2500–3999 g`, `>=4000 g` |
-| `apgar` | `<7`, `>=7` |
-| `hpp` (hemorragia posparto) | `No`, `Sí` |
+El formulario recopila exclusivamente las cinco prácticas documentadas. El registro guardado contiene esas prácticas, el identificador automático, `indice` y `score`. El HCC-PI se calcula únicamente a partir de las prácticas.
 
 ## Identificador demostrativo
 

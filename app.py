@@ -105,27 +105,13 @@ def registrar() -> None:
     identificador = siguiente_id(registros)
     st.info(f"ID automático: **{identificador}** · No ingrese datos personales.")
     with st.form("form_parto"):
-        a,b,c = st.columns(3)
-        clinicos = {
-            "edad_materna": a.selectbox("Edad materna", ["<20", "20–34", ">=35"]),
-            "educacion": b.selectbox("Educación", ["Primaria o menos", "Secundaria o superior"]),
-            "prenatales": c.selectbox("Visitas prenatales", ["0", "1–4", ">=5"]),
-            "gestacional": a.selectbox("Edad gestacional", ["<37", "37–41", ">=42"]),
-            "peso": b.selectbox("Peso neonatal", ["<2500 g", "2500–3999 g", ">=4000 g"]),
-            "apgar": c.selectbox("Apgar minuto 1", ["<7", ">=7"]),
-            "hpp": a.selectbox(
-                "Hemorragia posparto (HPP)",
-                ["No", "Sí"],
-                help="No: no presentó hemorragia posparto. Sí: presentó hemorragia posparto.",
-            ),
-        }
         st.markdown("#### Prácticas documentadas")
         practicas = {codigo: st.checkbox(datos["nombre"], key=f"registro_{codigo}") for codigo,datos in PRACTICAS.items()}
         calcular = st.form_submit_button("CALCULAR HCC-PI", width="stretch")
     if calcular:
         try:
             indice, score = calcular_hccpi(practicas)
-            st.session_state["ultimo_calculo"] = {"id": identificador, **clinicos, **practicas, "indice": indice, "score": score}
+            st.session_state["ultimo_calculo"] = {"id": identificador, **practicas, "indice": indice, "score": score}
         except ValueError as error: st.error(str(error))
     resultado = st.session_state.get("ultimo_calculo")
     if resultado:
